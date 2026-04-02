@@ -480,6 +480,7 @@ body.is-loading #page-overlay {
   letter-spacing: 0.18em;
   text-transform: uppercase;
   transition: color 0.3s;
+  margin-top: 80px;
 }
 .detail-nav__link:hover { color: var(--accent); }
 .detail-nav__link span { font-size: 1.2rem; }
@@ -801,6 +802,7 @@ body.is-loading #page-overlay {
 
   .contact-page { padding: var(--nav-h) 20px 80px; }
   .site-footer { padding: 24px 20px; }
-
-  .detail-nav { padding: 60px 20px 0; }
+  .detail-info__label { font-size: 0.7rem; }
+  .detail-info__value { font-size: 1.1rem; }
+  .detail-nav { padding: 0 20px ; }
 }
