@@ -99,9 +99,8 @@ body.is-loading #page-overlay {
 
 .nav__logo {
   font-family: 'Shippori Antique', serif;
-  font-size: 0.95rem;
+  font-size: 1.5rem;
   letter-spacing: 0.18em;
-  color: var(--text);
   position: relative;
   z-index: 1;
   transition: opacity 0.3s;
@@ -116,7 +115,8 @@ body.is-loading #page-overlay {
 }
 
 .nav__link {
-  font-size: 0.72rem;
+  font-size: 1.2rem;
+  font-weight: 700;
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--muted);
@@ -579,9 +579,7 @@ body.is-loading #page-overlay {
 }
 
 .about-text {
-  font-size: 0.9rem;
   line-height: 2.1;
-  color: rgba(232,226,217,0.7);
   max-width: 44ch;
   margin-bottom: 52px;
   opacity: 0;
@@ -613,15 +611,13 @@ body.is-loading #page-overlay {
 }
 
 .about-spec__label {
-  font-size: 0.65rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--muted);
   display: block;
   margin-bottom: 4px;
 }
 .about-spec__value {
-  font-size: 0.88rem;
+  font-size: 1.5rem;
   color: var(--text);
 }
 
@@ -773,9 +769,7 @@ body.is-loading #page-overlay {
 }
 
 .site-footer__copy {
-  font-size: 0.68rem;
   letter-spacing: 0.18em;
-  color: var(--muted);
 }
 
 .site-footer__top {

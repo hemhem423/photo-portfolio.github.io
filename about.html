@@ -1,145 +1,160 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About — Kenji Morishima Photography</title>
-  <meta name="description" content="Kenji Morishima — 東京を拠点に活動するフォトグラファー。風景・都市・ポートレートを中心に。">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body class="is-loading">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About — Kenji Morishima Photography</title>
+    <meta
+      name="description"
+      content="Kenji Morishima — 東京を拠点に活動するフォトグラファー。風景・都市・ポートレートを中心に。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="is-loading">
+    <div id="page-overlay" class="active"></div>
+    <div id="cursor"></div>
 
-  <div id="page-overlay" class="active"></div>
-  <div id="cursor"></div>
+    <nav class="nav" aria-label="サイトナビゲーション">
+      <a href="index.html" class="nav__logo">K.MORISHIMA</a>
+      <div class="nav__links" role="list">
+        <a href="index.html" class="nav__link" role="listitem">Home</a>
+        <a href="about.html" class="nav__link" role="listitem">About</a>
+        <a href="contact.html" class="nav__link" role="listitem">Contact</a>
+      </div>
+    </nav>
 
-  <nav class="nav" aria-label="サイトナビゲーション">
-    <a href="index.html" class="nav__logo">K.MORISHIMA</a>
-    <div class="nav__links" role="list">
-      <a href="index.html"   class="nav__link" role="listitem">Works</a>
-      <a href="about.html"   class="nav__link" role="listitem">About</a>
-      <a href="contact.html" class="nav__link" role="listitem">Contact</a>
-    </div>
-  </nav>
+    <!-- ============ ABOUT PAGE ============ -->
+    <main class="about-page">
+      <!-- スプリットレイアウト -->
+      <div class="about-split">
+        <!-- 写真カラム -->
+        <div class="about-split__img-col" aria-hidden="true">
+          <img
+            class="about-split__img"
+            src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=1200&q=85"
+            alt="Kenji Morishima ポートレート"
+            width="1000"
+            height="1400"
+          />
+        </div>
 
-  <!-- ============ ABOUT PAGE ============ -->
-  <main class="about-page">
+        <!-- テキストカラム -->
+        <div class="about-split__text-col">
+          <span class="about-eyebrow">Photographer</span>
+          <h1 class="about-name">
+            森島 賢二<br /><small
+              style="font-size: 0.5em; letter-spacing: 0.1em"
+              >Kenji Morishima</small
+            >
+          </h1>
 
-    <!-- スプリットレイアウト -->
-    <div class="about-split">
+          <p class="about-text">
+            1988年、長野県生まれ。東京を拠点に活動するフォトグラファー。
+            風景、都市、ポートレートを主なフィールドとし、光と影が生み出す一瞬の静寂を追い続けている。
+          </p>
 
-      <!-- 写真カラム -->
-      <div class="about-split__img-col" aria-hidden="true">
-        <img
-          class="about-split__img"
-          src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=1000&q=85"
-          alt="Kenji Morishima ポートレート"
-          width="1000"
-          height="1400"
-        >
+          <p class="about-text">
+            2015年より本格的に写真活動を開始。国内外の媒体への寄稿、展覧会への出展、
+            ブランドや広告代理店とのコマーシャル撮影など、幅広く活動中。
+          </p>
+
+          <dl class="about-specs">
+            <div class="about-spec">
+              <dt class="about-spec__label">Base</dt>
+              <dd class="about-spec__value">Tokyo, Japan</dd>
+            </div>
+            <div class="about-spec">
+              <dt class="about-spec__label">Born</dt>
+              <dd class="about-spec__value">1988, Nagano</dd>
+            </div>
+            <div class="about-spec">
+              <dt class="about-spec__label">Field</dt>
+              <dd class="about-spec__value">Landscape / Urban / Portrait</dd>
+            </div>
+            <div class="about-spec">
+              <dt class="about-spec__label">Clients</dt>
+              <dd class="about-spec__value">Available on request</dd>
+            </div>
+          </dl>
+        </div>
       </div>
 
-      <!-- テキストカラム -->
-      <div class="about-split__text-col">
-        <span class="about-eyebrow">Photographer</span>
-        <h1 class="about-name">森島 賢二<br><small style="font-size:0.5em;letter-spacing:0.1em;">Kenji Morishima</small></h1>
+      <!-- Selected Works リンク -->
+      <section class="about-works">
+        <span class="section-label">Selected Works</span>
+        <ul class="works-list" aria-label="代表作品">
+          <li class="work-item">
+            <div class="work-item__inner">
+              <span class="work-item__num">01</span>
+              <a
+                href="detail-01.html"
+                class="work-item__link"
+                aria-label="Silence of Dawn を見る"
+              >
+                <div class="work-item__img-wrap">
+                  <img
+                    class="work-item__img"
+                    data-src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=900&q=80"
+                    src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E"
+                    alt="Silence of Dawn"
+                    loading="lazy"
+                    width="900"
+                    height="600"
+                  />
+                </div>
+                <div class="work-item__meta">
+                  <h2 class="work-item__title">Silence of Dawn</h2>
+                  <span class="work-item__year">2024</span>
+                </div>
+              </a>
+            </div>
+          </li>
 
-        <p class="about-text">
-          1988年、長野県生まれ。東京を拠点に活動するフォトグラファー。
-          風景、都市、ポートレートを主なフィールドとし、光と影が生み出す一瞬の静寂を追い続けている。
-        </p>
+          <div class="works-divider" aria-hidden="true"></div>
 
-        <p class="about-text">
-          2015年より本格的に写真活動を開始。国内外の媒体への寄稿、展覧会への出展、
-          ブランドや広告代理店とのコマーシャル撮影など、幅広く活動中。
-        </p>
+          <li class="work-item">
+            <div class="work-item__inner">
+              <span class="work-item__num">02</span>
+              <a
+                href="detail-02.html"
+                class="work-item__link"
+                aria-label="Urban Monologue を見る"
+              >
+                <div class="work-item__img-wrap">
+                  <img
+                    class="work-item__img"
+                    data-src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=900&q=80"
+                    src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E"
+                    alt="Urban Monologue"
+                    loading="lazy"
+                    width="900"
+                    height="600"
+                  />
+                </div>
+                <div class="work-item__meta">
+                  <h2 class="work-item__title">Urban Monologue</h2>
+                  <span class="work-item__year">2024</span>
+                </div>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
 
-        <dl class="about-specs">
-          <div class="about-spec">
-            <dt class="about-spec__label">Base</dt>
-            <dd class="about-spec__value">Tokyo, Japan</dd>
-          </div>
-          <div class="about-spec">
-            <dt class="about-spec__label">Born</dt>
-            <dd class="about-spec__value">1988, Nagano</dd>
-          </div>
-          <div class="about-spec">
-            <dt class="about-spec__label">Field</dt>
-            <dd class="about-spec__value">Landscape / Urban / Portrait</dd>
-          </div>
-          <div class="about-spec">
-            <dt class="about-spec__label">Clients</dt>
-            <dd class="about-spec__value">Available on request</dd>
-          </div>
-        </dl>
-      </div>
+    <footer class="site-footer">
+      <small class="site-footer__copy">© 2025 Kenji Morishima</small>
+      <span
+        class="site-footer__top"
+        role="button"
+        tabindex="0"
+        aria-label="ページ上部に戻る"
+        >Top ↑</span
+      >
+    </footer>
 
-    </div>
-
-    <!-- Selected Works リンク -->
-    <section class="about-works">
-      <span class="section-label">Selected Works</span>
-      <ul class="works-list" aria-label="代表作品">
-
-        <li class="work-item">
-          <div class="work-item__inner">
-            <span class="work-item__num">01</span>
-            <a href="detail-01.html" class="work-item__link" aria-label="Silence of Dawn を見る">
-              <div class="work-item__img-wrap">
-                <img
-                  class="work-item__img"
-                  data-src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=900&q=80"
-                  src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E"
-                  alt="Silence of Dawn"
-                  loading="lazy"
-                  width="900"
-                  height="600"
-                >
-              </div>
-              <div class="work-item__meta">
-                <h2 class="work-item__title">Silence of Dawn</h2>
-                <span class="work-item__year">2024</span>
-              </div>
-            </a>
-          </div>
-        </li>
-
-        <div class="works-divider" aria-hidden="true"></div>
-
-        <li class="work-item">
-          <div class="work-item__inner">
-            <span class="work-item__num">02</span>
-            <a href="detail-02.html" class="work-item__link" aria-label="Urban Monologue を見る">
-              <div class="work-item__img-wrap">
-                <img
-                  class="work-item__img"
-                  data-src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=900&q=80"
-                  src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E"
-                  alt="Urban Monologue"
-                  loading="lazy"
-                  width="900"
-                  height="600"
-                >
-              </div>
-              <div class="work-item__meta">
-                <h2 class="work-item__title">Urban Monologue</h2>
-                <span class="work-item__year">2024</span>
-              </div>
-            </a>
-          </div>
-        </li>
-
-      </ul>
-    </section>
-
-  </main>
-
-  <footer class="site-footer">
-    <small class="site-footer__copy">© 2025 Kenji Morishima</small>
-    <span class="site-footer__top" role="button" tabindex="0" aria-label="ページ上部に戻る">Top ↑</span>
-  </footer>
-
-  <script src="js/main.js"></script>
-</body>
+    <script src="js/main.js"></script>
+  </body>
 </html>
