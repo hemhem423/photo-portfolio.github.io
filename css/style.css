@@ -360,10 +360,8 @@ body.is-loading #page-overlay {
 }
 
 .detail-series {
-  font-size: 0.72rem;
   letter-spacing: 0.25em;
   text-transform: uppercase;
-  color: var(--accent);
   margin-bottom: 24px;
   display: block;
   opacity: 0;
@@ -398,15 +396,13 @@ body.is-loading #page-overlay {
 
 .detail-info__item {}
 .detail-info__label {
-  font-size: 0.65rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--muted);
   display: block;
   margin-bottom: 6px;
 }
 .detail-info__value {
-  font-size: 0.9rem;
+  font-size: 1.5rem;
   color: var(--text);
 }
 
@@ -480,20 +476,17 @@ body.is-loading #page-overlay {
   display: flex;
   align-items: center;
   gap: 16px;
-  font-size: 0.75rem;
+  font-size: 1.5rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--muted);
   transition: color 0.3s;
 }
-.detail-nav__link:hover { color: var(--text); }
+.detail-nav__link:hover { color: var(--accent); }
 .detail-nav__link span { font-size: 1.2rem; }
 
 .detail-nav__back {
-  font-size: 0.72rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: var(--muted);
   transition: color 0.3s;
   position: relative;
 }
@@ -680,7 +673,6 @@ body.is-loading #page-overlay {
   font-size: 0.9rem;
   line-height: 2;
   color: rgba(232,226,217,0.6);
-  max-width: 42ch;
   margin: 0 auto 64px;
   opacity: 0;
   transform: translateY(20px);
@@ -743,7 +735,6 @@ body.is-loading #page-overlay {
   font-size: 0.68rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: var(--muted);
   transition: color 0.3s;
 }
 .contact-social__link:hover { color: var(--text); }
