@@ -58,26 +58,27 @@ const cursor = document.getElementById('cursor');
 if (cursor && window.matchMedia('(hover: hover)').matches) {
   let mouseX = 0, mouseY = 0;
   let curX = 0, curY = 0;
-  
+  let isHovering = false;
+
   document.addEventListener('mousemove', (e) => {
     mouseX = e.clientX;
     mouseY = e.clientY;
   });
-  
+
   const animateCursor = () => {
-    curX += (mouseX - curX) * 0.15;
-    curY += (mouseY - curY) * 0.15;
+    const ease = isHovering ? 0.18 : 1.0;
+    curX += (mouseX - curX) * ease;
+    curY += (mouseY - curY) * ease;
     cursor.style.left = curX + 'px';
     cursor.style.top  = curY + 'px';
     requestAnimationFrame(animateCursor);
   };
   animateCursor();
-  
-  // ホバー時に拡大
+
   const hoverEls = document.querySelectorAll('a, button, [data-cursor]');
   hoverEls.forEach(el => {
-    el.addEventListener('mouseenter', () => cursor.classList.add('is-hovering'));
-    el.addEventListener('mouseleave', () => cursor.classList.remove('is-hovering'));
+    el.addEventListener('mouseenter', () => { isHovering = true;  cursor.classList.add('is-hovering'); });
+    el.addEventListener('mouseleave', () => { isHovering = false; cursor.classList.remove('is-hovering'); });
   });
 }
 
