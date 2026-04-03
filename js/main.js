@@ -213,3 +213,28 @@ if (topBtn) {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 }
+/* ============================================
+   HAMBURGER MENU
+   ============================================ */
+
+const hamburger = document.querySelector('.nav__hamburger');
+const navLinks  = document.querySelector('.nav__links');
+
+if (hamburger && navLinks) {
+  hamburger.addEventListener('click', () => {
+    const isOpen = hamburger.classList.toggle('is-open');
+    navLinks.classList.toggle('is-open', isOpen);
+    hamburger.setAttribute('aria-expanded', isOpen);
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+  });
+
+  // メニュー内リンクをタップしたら閉じる
+  navLinks.querySelectorAll('.nav__link').forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('is-open');
+      navLinks.classList.remove('is-open');
+      hamburger.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    });
+  });
+}
