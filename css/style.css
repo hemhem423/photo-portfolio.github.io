@@ -265,11 +265,14 @@ body.is-loading #page-overlay {
 /* 写真リスト */
 .works-list {
   list-style: none;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+  padding: 0 40px;
 }
 
 .work-item {
-  padding: 0 40px;
-  margin-bottom: 120px;
+  margin-bottom: 0;
   opacity: 0;
   transform: translateY(60px);
   transition: opacity 0.9s var(--ease-out), transform 0.9s var(--ease-out);
@@ -280,29 +283,15 @@ body.is-loading #page-overlay {
   transform: translateY(0);
 }
 
-/* 交互にレイアウトをずらす */
-.works-list .work-item:nth-child(even) .work-item__inner {
-  margin-left: auto;
-  margin-right: 0;
-}
-
-.work-item:nth-child(odd) .work-item__inner {
-  margin-left: 0;
-  margin-right: auto;
-}
+/* 12列グリッドで大小交互 — detail-galleryと同パターン */
+.works-list .work-item:nth-child(4n+1) { grid-column: 1 / 8; }
+.works-list .work-item:nth-child(4n+2) { grid-column: 8 / 13; }
+.works-list .work-item:nth-child(4n+3) { grid-column: 1 / 5; }
+.works-list .work-item:nth-child(4n+0) { grid-column: 5 / 13; }
 
 .work-item__inner {
-  width: clamp(55%, 72vw, 900px);
+  width: 100%;
   position: relative;
-}
-
-/* 番号 */
-.work-item__num {
-  font-size: 0.68rem;
-  letter-spacing: 0.25em;
-  color: var(--muted);
-  margin-bottom: 16px;
-  display: block;
 }
 
 /* 写真ラッパー */
@@ -836,7 +825,7 @@ body.is-loading #page-overlay {
 
 @media (max-width: 768px) {
   .nav { padding: 0 20px; }
-
+  .works-list { display: block; padding: 0;}
   .works-header { padding: 20px 20px 48px; flex-direction: column; gap: 8px; }
   .work-item { padding: 0 20px; margin-bottom: 80px; }
   .work-item__inner,
